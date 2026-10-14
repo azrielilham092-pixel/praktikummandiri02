@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Pemesanan Barang</title>
+</head>
+<body>
+
+    <!-- Menu Navigasi -->
+    <table border="1" width="100%" cellpadding="5">
+        <tr>
+            <td align="center"><a href="#">Home</a></td>
+            <td align="center"><a href="#">Register</a></td>
+            <td align="center"><a href="#">Policy</a></td>
+            <td align="center"><a href="#">About</a></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- Form Hasil Pemesanan Barang -->
+    <form action="#" method="post">
+        <table cellpadding="5">
+            <tr>
+                <!-- Kolom kiri: gambar barang -->
+                <td valign="top" width="250">
+                    <img src="poto mobil avanza.jpg" alt=Foto mobil width="250" height="200">
+                </td>
+
+                <!-- Kolom kanan: detail pembayaran -->
+                <td valign="top">
+                    <table cellpadding="5">
+                        <tr>
+                            <td align="right">Title Here :</td>
+                            <td>Toyota Avanza 2019 Rp 150.000.000</td>
+                        </tr>
+                        <tr>
+                            <td align="right" valign="top">Description :</td>
+                            <td>
+                                Year : 2019<br>
+                                Model : Toyota Avanza 1.3 G<br>
+                                Condition : Mint
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">Total Amount :</td>
+                            <td>Rp 150.000.000</td>
+                        </tr>
+                        <tr>
+                            <td align="right">Pay to :</td>
+                            <td>123-456-789-0</td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="payment_type">Payment Type :</label></td>
+                            <td>
+                                <select id="payment_type" name="payment_type">
+                                    <option value="visa_debit" selected>Visa Debit</option>
+                                    <option value="visa_credit">Visa Credit</option>
+                                    <option value="mastercard">Mastercard</option>
+                                    <option value="paypal">PayPal</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="account_holder">Account Holder :</label></td>
+                            <td><input type="text" id="account_holder" name="account_holder" size="50" placeholder="Name Here"></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="account_no">Account No :</label></td>
+                            <td>
+                                <input type="text" id="account_no" name="account_no" size="50" value="123-456-789-0">
+                                <br>
+                                <input type="checkbox" id="send_mobile" name="send_mobile" value="yes" checked>
+                                <label for="send_mobile">Send to Mobile Phone</label>
+                                <br>
+                                <input type="checkbox" id="send_email" name="send_email" value="yes" checked>
+                                <label for="send_email">Email me copy of transaction</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="mobile_phone">Send to Mobile Phone :</label></td>
+                            <td><input type="text" id="mobile_phone" name="mobile_phone" size="50" value="1234567890, 1234567891"></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="email">Send to Email :</label></td>
+                            <td><input type="text" id="email" name="email" size="50" value="azriel@soton.ac.uk, fys_06@yahoo.com"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button type="submit">Pay using QuidLink</button></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <hr>
+
+</body>
+</html>
